@@ -25,6 +25,7 @@ jobs:
           name: Update Blog
           working_directory: ~/workdir
           command: |
+            npm install 
             hugo
             git config user.email "ales.puchilo@@gmail.com"
             git config user.name "Ales Puchilo"
