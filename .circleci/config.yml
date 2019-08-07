@@ -17,11 +17,11 @@ jobs:
                 command: HUGO_ENV=production hugo -d ~/public
             - deploy:
                 name: Deploy to Github Pages
-                working_directory: ~/public
+                working_directory: ~/workdir
                 command: |
                     git config user.email "ales.puchilo@gmail.com"
                     git config user.name "Ales Puchilo"
-                    git add .
+                    git add ~/workdir/public
                     git push -q -f https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git master:gh-pages
 
 workflows:
