@@ -1,0 +1,33 @@
+version: 2
+
+workflows:
+  version: 2
+  default_workflow:
+    jobs:
+      - update_doc:
+          filters:
+            branches:
+              only: master
+
+
+jobs:
+  update_doc:
+    working_directory: ~/workdir
+    docker:
+      - image: circleci/node:10.15.1-browsers
+    steps:
+      - checkout
+      - run:
+          name: Update Blog
+          command: |
+            git clone -q --depth 1 https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git
+      - deploy:
+          name: Update Blog
+          working_directory: ~/workdir
+          command: |
+            make build
+            git config user.email "ales.puchilo@@gmail.com"
+            git config user.name "Ales Puchilo"
+            git add .
+            git commit -m "Circle CI: Update Site [skip ci]"
+            git push -q -f https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git master:gh-pages
