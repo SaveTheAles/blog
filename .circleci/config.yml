@@ -25,7 +25,7 @@ jobs:
           name: Update Blog
           working_directory: ~/workdir
           command: |
-            make build
+            hugo
             git config user.email "ales.puchilo@@gmail.com"
             git config user.name "Ales Puchilo"
             git add .
