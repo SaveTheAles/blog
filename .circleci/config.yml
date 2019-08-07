@@ -9,11 +9,11 @@ jobs:
             - checkout
             - run:
                 name: Get current site
-                working_directory: ~/
+                working_directory: ~/workdir
                 command: git clone -q --depth 1 https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git
             - run:
                 name: Generate site
-                working_directory: ~/blog.github.io
+                working_directory: ~/workdir
                 command: HUGO_ENV=production hugo -d ~/public
             - deploy:
                 name: Deploy to Github Pages
