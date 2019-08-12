@@ -23,7 +23,7 @@ jobs:
                     git config user.name "Ales Puchilo"
                     git add .
                     git commit --allow-empty -m "Trigger deployment"
-                    git push -q -f https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git master:gh-pages
+                    git push -q -f https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git gh-pages
 
 workflows:
   version: 2
