@@ -13,7 +13,7 @@ jobs:
                 command: git clone -q --depth 1 https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git
             - run:
                 name: Generate site
-                working_directory: ~/workdir
+                working_directory: ~/workdir/blog
                 command: | 
                     ls
                     HUGO_ENV=production hugo -d ~/public
