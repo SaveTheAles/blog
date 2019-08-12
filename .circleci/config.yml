@@ -15,9 +15,7 @@ jobs:
                 name: Generate site
                 working_directory: ~/workdir/blog
                 command: | 
-                    ls
                     HUGO_ENV=production hugo -d ~/public
-                    cd public
                     ls
             - deploy:
                 name: Deploy to Github Pages
