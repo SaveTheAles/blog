@@ -19,6 +19,8 @@ jobs:
                 name: Deploy to Github Pages
                 working_directory: ~/workdir
                 command: |
+                    pwd
+                    ls
                     git config user.email "ales.puchilo@gmail.com"
                     git config user.name "Ales Puchilo"
                     git add ~/workdir/public
