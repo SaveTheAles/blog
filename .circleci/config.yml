@@ -19,11 +19,10 @@ jobs:
                 name: Deploy to Github Pages
                 working_directory: ~/workdir
                 command: |
-                    pwd
-                    ls
+                    cd public
                     git config user.email "ales.puchilo@gmail.com"
                     git config user.name "Ales Puchilo"
-                    git add ~/workdir/public
+                    git add .
                     git push -q -f https://${BLOG_GITHUB_TOKEN}@github.com/savetheales/blog.git master:gh-pages
 
 workflows:
