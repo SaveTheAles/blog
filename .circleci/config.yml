@@ -19,6 +19,7 @@ jobs:
                 name: Deploy to Github Pages
                 working_directory: ~/public
                 command: |
+                    ls
                     git config user.email "ales.puchilo@gmail.com"
                     git config user.name "Ales Puchilo"
                     git init
