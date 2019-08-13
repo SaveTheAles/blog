@@ -1,4 +1,4 @@
-hugo -v # command to build your site
+hugo # command to build your site
 cd public # cd into folder containing your built site
 
 git init
