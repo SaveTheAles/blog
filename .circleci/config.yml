@@ -101,7 +101,7 @@ jobs:
       - image: cibuilds/hugo:latest
     steps:
       - checkout
-      - run: ./deploy.sh
+      - run: deploy.sh
     branches:
       only:
         - master
