@@ -1,4 +1,4 @@
-baseurl = "https://savetheales.github.io/blog/"
+baseurl = "savetheales.dev/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
@@ -22,7 +22,7 @@ paginate = 5
 
     [languages.en.params.logo]
       logoText = "savetheales Blog"
-      logoHomeLink = "https://savetheales.github.io/blog/"
+      logoHomeLink = "savetheales.dev/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
