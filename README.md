@@ -9,4 +9,4 @@ For new posts request welcome to [GH-issues](https://github.com/SaveTheAles/blog
 
 All contribution are welcome
 
-<img src="/tex/d6321babf0474cc81fe7ab1e3d4be211.svg?invert_in_darkmode&sanitize=true" align=middle width=48.95457764999998pt height=26.76175259999998pt/>
+<p align="center"><img src="/tex/0ad176da9b980c5e94f0601e84c2fac5.svg?invert_in_darkmode&sanitize=true" align=middle width=42.43153365pt height=37.03214955pt/></p>
